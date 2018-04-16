@@ -45,7 +45,7 @@ public class Ticket {
 		return flightDate;
 	}
 
-	public void setFlightFDate(String flyDate) {
+	public void setFlightDate(String flyDate) {
 		this.flightDate = flyDate;
 	}
 
@@ -59,23 +59,23 @@ public class Ticket {
 
 	public Ticket(int ID, String ownerName, String source, String destination, String flightDate, int flightNumber) {
 		setTicketID(ID);
-		this.ownerName = ownerName;
-		this.source = source;
-		this.destination = destination;
-		this.flightDate = flightDate;
-		this.flightNumber = flightNumber;
-	}
+		setOwnerName(ownerName);
+		setSource(source);
+		setDestination(destination);
+		setFlightDate(flightDate);
+		setFlightNumber(flightNumber);	}
 
 	public Ticket(String ownerName, String source, String destination, String flightDate, int flightNumber) {
-		this.ownerName = ownerName;
-		this.source = source;
-		this.destination = destination;
-		this.flightDate = flightDate;
-		this.flightNumber = flightNumber;
+		setOwnerName(ownerName);		
+		setSource(source);		
+		setDestination(destination);
+		setFlightDate(flightDate);
+		setFlightNumber(flightNumber);
 	}
 
 	public Ticket() {
 
 	}
+
 
 }
